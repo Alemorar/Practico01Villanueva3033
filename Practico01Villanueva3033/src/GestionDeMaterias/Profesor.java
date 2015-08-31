@@ -9,7 +9,7 @@ package GestionDeMaterias;
  *
  * @author alejandro
  */
-public class Profesor {
+public class Profesor extends Persona{
     private String materia;
     private String cargo;
 
