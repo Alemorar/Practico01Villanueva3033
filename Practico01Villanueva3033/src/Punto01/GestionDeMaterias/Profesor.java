@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GestionDeMaterias;
+package Punto01.GestionDeMaterias;
 
 /**
  *
@@ -20,7 +20,7 @@ public class Profesor extends Persona{
         return materia;
     }
 
-    public void setMateria(String materia) {
+    public void setMateria(String materia) {//se corrige tipo de dato String val por String materia
         this.materia = materia;
     }
 
@@ -28,7 +28,7 @@ public class Profesor extends Persona{
         return cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void setCargo(String cargo) {//se corrige riop de dato String val por String cargo
         this.cargo = cargo;
     }
     

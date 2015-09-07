@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GestionDeMaterias;
+package Punto01.GestionDeMaterias;
 
 /**
  *
@@ -20,7 +20,7 @@ public class Persona {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre) {//se corrige paramaetro String val por String nombre
         this.nombre = nombre;
     }
 
@@ -28,7 +28,7 @@ public class Persona {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(int edad) {//se corrige parametro int val por int edad.
         this.edad = edad;
     }
     

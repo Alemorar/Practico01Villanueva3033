@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lavarropa;
+package Punto01.Lavarropa;
 
 /**
  *
@@ -20,7 +20,7 @@ public class Lavadora {
         return serie;
     }
 
-    public void setSerie(int serie) {
+    public void setSerie(int serie) {//se corrige parametro int val por int serie
         this.serie = serie;
     }
 
@@ -28,7 +28,7 @@ public class Lavadora {
         return fabricante;
     }
 
-    public void setFabricante(String fabricante) {
+    public void setFabricante(String fabricante) {//se corrige parametro String val por String fabricante
         this.fabricante = fabricante;
     }
     
