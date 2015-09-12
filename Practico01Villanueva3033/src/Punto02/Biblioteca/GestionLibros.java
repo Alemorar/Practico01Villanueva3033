@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Punto02.Restaurante;
+package Punto02.Biblioteca;
 
 /**
  *
  * @author nahuel
  */
-public class Detalle extends OrdenDeServicio{
-    
+public class GestionLibros {
+    public static void main(String[] args){
+        Copia unaCopia = new Copia();
+        
+        unaCopia.unMetodo();
+    }
 }
