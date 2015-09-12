@@ -19,7 +19,7 @@ public class CopiaDeLibro {
     private String nombreAutor;
     private String nacionalidadAutor;//nacionalidad autor
     private Date fechaNacAutor;//nacimiento autor
-    private int cantidadCopia;
+    private int stock;
 
     public CopiaDeLibro() {
     }
@@ -80,12 +80,12 @@ public class CopiaDeLibro {
         this.fechaNacAutor = fechaNacAutor;
     }
 
-    public int getCantidadCopia() {
-        return cantidadCopia;
+    public int getStock() {
+        return stock;
     }
 
-    public void setCantidadCopia(int cantidadCopia) {
-        this.cantidadCopia = cantidadCopia;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
     
     

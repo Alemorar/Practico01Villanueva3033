@@ -13,18 +13,17 @@ import java.util.Date;
  */
 public class DetalleTransaccion {
     private CopiaDeLibro unaCopia;
-    private int cantidad = 1;
+    private int cantidadCopia;
     private Lector lector;
+    private String estado; //biblioteca, prestada, c/retraso, e/reparacion
+    private Date devolucion;
 
     public DetalleTransaccion() {
+        this.cantidadCopia = 1;
     }
     
-    public void calcularDevolucion(){
-        
-    }
-    
-    public void calcularSancion(){
-        
+    public void actualizarStock(){
+        unaCopia.setStock(unaCopia.getStock() - cantidadCopia);
     }
 
     public CopiaDeLibro getUnaCopia() {
@@ -35,14 +34,13 @@ public class DetalleTransaccion {
         this.unaCopia = unaCopia;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public int getCantidadCopia() {
+        return cantidadCopia;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setCantidadCopia(int cantidadCopia) {
+        this.cantidadCopia = cantidadCopia;
     }
-
 
     public Lector getLector() {
         return lector;
@@ -50,6 +48,27 @@ public class DetalleTransaccion {
 
     public void setLector(Lector lector) {
         this.lector = lector;
+    }
+
+    @Override
+    public String toString() {
+        return "DetalleTransaccion{" + "unaCopia=" + unaCopia + ", cantidadCopia=" + cantidadCopia + ", lector=" + lector + '}';
+    }
+
+    public Date getDevolucion() {
+        return devolucion;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public void setDevolucion(Date devolucion) {
+        this.devolucion = devolucion;
     }
 }
 

@@ -12,8 +12,13 @@ package Punto02.Biblioteca;
 public class Lector {
     private String nombre;
     private int telefono;
+    private boolean habilitado;
+    private boolean conSancion;
+    private double multa;
 
     public Lector() {
+        this.conSancion = false;
+        this.habilitado = true;
     }
 
     public String getNombre() {
@@ -30,5 +35,13 @@ public class Lector {
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
+    }
+
+    public boolean isSancion() {
+        return conSancion;
+    }
+
+    public void setSancion(boolean sancion) {
+        this.conSancion = sancion;
     }
 }
