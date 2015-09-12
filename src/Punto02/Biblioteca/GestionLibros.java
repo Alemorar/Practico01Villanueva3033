@@ -11,8 +11,8 @@ package Punto02.Biblioteca;
  */
 public class GestionLibros {
     public static void main(String[] args){
-        Copia unaCopia = new Copia();
+//        Copia unaCopia = new Copia();
         
-        unaCopia.unMetodo();
+//        unaCopia.unMetodo();
     }
 }

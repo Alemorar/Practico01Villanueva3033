@@ -15,8 +15,32 @@ import java.util.Date;
 public class Transaccion {
     private int idOperacion;
     private Date fecha;
-    private Date devolucion;
     private boolean sancion = false;
     private ArrayList<DetalleTransaccion> detalle;
+    private String estado; //biblioteca, prestada, c/retraso, e/reparacion
+
+    public Transaccion() {
+        detalle = new ArrayList<>();
+    }
+    
+    public void agregarDetalle(DetalleTransaccion dt){
+        detalle.add(dt);
+    }
+    
+    public Date fechaDevolucion(){
+        
+        
+        return null;
+    }
+    
+    
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
     
 }

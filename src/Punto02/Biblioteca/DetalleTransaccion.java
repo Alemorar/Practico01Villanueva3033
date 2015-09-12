@@ -13,8 +13,7 @@ import java.util.Date;
  */
 public class DetalleTransaccion {
     private CopiaDeLibro unaCopia;
-    private int cantidad;
-    private String estado;//biblioteca, prestada, c/retraso, e/reparacion
+    private int cantidad = 1;
     private Lector lector;
 
     public DetalleTransaccion() {
@@ -44,13 +43,6 @@ public class DetalleTransaccion {
         this.cantidad = cantidad;
     }
 
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
 
     public Lector getLector() {
         return lector;
